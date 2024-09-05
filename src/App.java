@@ -121,10 +121,25 @@ public class App {
         //buscando elementos
         int posicao = Arrays.binarySearch(lista_cidade, "itaqua");
         System.out.println("Foi localizada na posição: "+posicao);
+                
 
+        // Declaração e inicialização da matriz bidimensional
+        int[][] matriz = new int[3][4]; // Cria uma matriz 3x4
 
-        
+        // Inicializando os valores da matriz
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = i + j; // Atribui a soma dos índices
+            }
+        }
 
+        // Acessando e imprimindo os valores da matriz
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println(); // Nova linha após cada linha da matriz
+        }
 
     }
     
